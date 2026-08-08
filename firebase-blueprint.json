@@ -1,0 +1,30 @@
+{
+  "entities": {
+    "events": {
+      "title": "Events",
+      "description": "Calendar events submitted by users or admins",
+      "properties": {
+        "title": { "type": "string", "description": "Title of the event" },
+        "type": { "type": "string", "description": "work | social | reminder | other" },
+        "start": { "type": "string", "description": "Start date YYYY-MM-DD" },
+        "startTime": { "type": "string", "description": "Start time HH:MM" },
+        "end": { "type": "string", "description": "End date YYYY-MM-DD" },
+        "endTime": { "type": "string", "description": "End time HH:MM" },
+        "location": { "type": "string", "description": "Event location" },
+        "added": { "type": "string", "description": "Date added YYYY-MM-DD" },
+        "status": { "type": "string", "description": "pending | approved | rejected" },
+        "requestedBy": { "type": "string", "description": "Email of requester" }
+      },
+      "required": ["title", "type", "start", "startTime", "end", "endTime", "status", "added"]
+    },
+    "roles": {
+      "title": "User Roles",
+      "description": "Admin or Viewer role mapping by email or UID",
+      "properties": {
+        "email": { "type": "string", "description": "User email" },
+        "role": { "type": "string", "description": "admin | viewer" }
+      },
+      "required": ["email", "role"]
+    }
+  }
+}

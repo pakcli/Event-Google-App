@@ -1,0 +1,6 @@
+{
+  "name": "Event Inbox",
+  "description": "A mobile-friendly shared event calendar with request approvals, Claude screenshot extraction, and one-tap Google Calendar integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
